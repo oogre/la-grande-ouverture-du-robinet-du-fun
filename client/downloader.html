@@ -1,0 +1,10 @@
+<template name="downloader">
+	<button class="grabber"> jokes grabber : {{btnTxt}} {{count}}</button>
+	{{> file lastJoke}}
+	<br/>
+	{{> readers}}
+</template>
+
+<template name="file">
+    {{reader}} - {{_id}} - <button class="play">Play</button> <button class="stop">Stop</button><a href="{{url}}" target="_blank">open in tab</a> 
+</template>

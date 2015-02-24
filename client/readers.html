@@ -1,0 +1,12 @@
+<template name="readers">
+	{{#each readers}}
+		{{> reader}}
+	{{/each}}
+</template>
+
+
+<template name="reader">
+	<h3>{{name}}</h3>
+	{{> file randomJoke}}
+</template>
+
